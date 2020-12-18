@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal information</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    h1{
+        text-align: center;
+        color:white;
+    }
+    
+</style>
+<body>
+    <h1>Fill this form to Process personal Information</h1> <br>
+        <div class="container">
+            <div class="jumbotron">
+                <form action="http://localhost:8000/" method="GET">
+                    <div class="mb-3">
+                    <label for="cname" class="form-label">Employee Name :</label>
+                    <input type="text" class="form-control" id="cname" aria-describedby="nameconrol" name="username" required>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
+                    
+                    </div>
+                    <div class="mb-3">
+                    <label for="DOB" class="form-label">Date of birth:</label>
+                    <input type="text" class="form-control" id="DOB" name="dob" required>
+                    </div>
+                    <div class="mb-3">
+                    <label for="Gender" class="form-label">Gender:</label>
+                    <input type="text" class="form-control" id="Gender" name="gender" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Blood group" class="form-label">Blood group:</label>
+                        <input type="text" class="form-control" id="Blood group" name="bgroup" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phno" class="form-label">Phone number:</label>
+                        <input type="text" class="form-control" id="phno" name="pno" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
